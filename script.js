@@ -2,15 +2,11 @@
 
 var cognomeUtente =prompt("scrivi il tuo cognome");
 
+
 if (cognomeUtente === ""){
     
     alert("contenuto vuoto, scrivi un cognome")
-}else if(cognomeUtente = Number){
-
-    alert("contenuto numerico, scrivi un cognome")
-    
-}
-    else {
+}else {
 
 
 //scrivo array di cognomi
