@@ -2,7 +2,15 @@
 
 var cognomeUtente =prompt("scrivi il tuo cognome");
 
+if (cognomeUtente === ""){
+    
+    alert("contenuto vuoto, scrivi un cognome")
+}else if(cognomeUtente = Number){
 
+    alert("contenuto numerico, scrivi un cognome")
+    
+}
+    else {
 
 
 //scrivo array di cognomi
@@ -22,6 +30,8 @@ var cognomi =
 cognomi.push(cognomeUtente);
 console.log(cognomi)
 
+
+
 //uso il metodo sort per mettere in ordine alfabetico le componenti degli array
 console.log(cognomi.sort());
 var posizioneCognome = (cognomi.indexOf(cognomeUtente));
@@ -40,3 +50,5 @@ while ( i<cognomi.length){
 //scrivo la posizione del cognome in forma umana
 
 document.getElementById("paragrafo").innerHTML="La posizione di " + cognomeUtente  + " è la numero "+ (posizioneCognome +1)
+
+}
