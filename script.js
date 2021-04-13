@@ -2,6 +2,9 @@
 
 var cognomeUtente =prompt("scrivi il tuo cognome");
 
+
+
+
 //scrivo array di cognomi
 console.log(cognomeUtente)
 
@@ -21,8 +24,19 @@ console.log(cognomi)
 
 //uso il metodo sort per mettere in ordine alfabetico le componenti degli array
 console.log(cognomi.sort());
+var posizioneCognome = (cognomi.indexOf(cognomeUtente));
+
+
+var i =0
+
+while ( i<cognomi.length){
+
+    var cognomiLista = document.getElementById("cognome")
+
+    cognomiLista.innerHTML+="<li>" + cognomi[i] + "</li>" 
+    i++
+}
 
 //scrivo la posizione del cognome in forma umana
 
-var posizioneCognome = (cognomi.indexOf(cognomeUtente));
-document.getElementById("cognome").innerHTML="La posizione di " + cognomeUtente  + " è la numero "+ (posizioneCognome +1)
+// document.getElementById("cognome").innerHTML="La posizione di " + cognomeUtente  + " è la numero "+ (posizioneCognome +1)
