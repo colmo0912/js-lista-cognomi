@@ -39,4 +39,4 @@ while ( i<cognomi.length){
 
 //scrivo la posizione del cognome in forma umana
 
-// document.getElementById("cognome").innerHTML="La posizione di " + cognomeUtente  + " è la numero "+ (posizioneCognome +1)
+document.getElementById("paragrafo").innerHTML="La posizione di " + cognomeUtente  + " è la numero "+ (posizioneCognome +1)
