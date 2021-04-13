@@ -21,3 +21,8 @@ console.log(cognomi)
 
 //uso il metodo sort per mettere in ordine alfabetico le componenti degli array
 console.log(cognomi.sort());
+
+//scrivo la posizione del cognome in forma umana
+
+var posizioneCognome = (cognomi.indexOf(cognomeUtente));
+document.getElementById("cognome").innerHTML="La posizione di " + cognomeUtente  + " è la numero "+ (posizioneCognome +1)
