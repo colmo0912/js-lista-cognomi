@@ -18,3 +18,6 @@ var cognomi =
 //aggiungo il cognome inserito dall'utente dentro l'array
 cognomi.push(cognomeUtente);
 console.log(cognomi)
+
+//uso il metodo sort per mettere in ordine alfabetico le componenti degli array
+console.log(cognomi.sort());
